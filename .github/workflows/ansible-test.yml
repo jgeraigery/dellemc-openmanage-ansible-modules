@@ -25,7 +25,7 @@ jobs:
         ansible-version: [stable-2.18]
     steps:
       - name: Check out code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v4
