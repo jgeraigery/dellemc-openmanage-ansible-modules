@@ -39,7 +39,7 @@ jobs:
         run: ansible-galaxy collection build --output-path .cache/collection-tarballs
 
       - name: Store migrated collection artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: collection
           path: .cache/collection-tarballs
