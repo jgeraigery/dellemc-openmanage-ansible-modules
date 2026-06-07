@@ -83,7 +83,7 @@ jobs:
         run: export PYTHONPATH="${GITHUB_WORKSPACE}":$PYTHONPATH && pytest -vvvv --cov --cov-branch --cov-report=xml:coverage.xml
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v7
         with:
           files: ./coverage.xml,
           token: ${{ secrets.CODECOV_TOKEN }}
